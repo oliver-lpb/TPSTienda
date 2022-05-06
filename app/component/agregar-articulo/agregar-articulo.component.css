@@ -1,0 +1,66 @@
+
+
+h3{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: center
+}
+
+.caja{
+    margin: 10px;
+}
+
+.caja label{
+    margin: 10px;
+    font-size: larger;
+}
+
+.caja input{
+    font-size: larger;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.caja input:focus{
+    outline: none;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 1s;
+}
+
+button:hover{
+    background: rgba(26,129,224,1);
+    border-radius: 0px;
+}
+button:focus{
+    background: rgba(26,129,224,1);
+    border-radius: 0px;
+}
+
+.tabla{
+    display: grid;
+    grid-template-columns: 1fr
+}
+.encabezado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.datos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.nombre{
+    position:absolute;
+    right: 45%;
+    top: 1%;
+    font-size: larger;
+
+}

@@ -1,0 +1,311 @@
+<main>
+    <h3>Actualizacion de productos</h3>
+    <div class="agregar">
+        <h3>Agregar Carnes</h3>
+        <form action="" [formGroup]="form" (ngSubmit)="crearCarne()">
+            <div class="caja">
+                <label for="">Tipo</label>
+                <input type="text" formControlName="tipo">
+            </div>
+            <div class="caja">
+                <label for="">Proveedor</label>
+                <input type="text" formControlName="proveedor">
+            </div>
+            <div class="caja">
+                <label for="">Precio </label>
+                <input type="text" formControlName="precio">
+            </div>
+            <div class="caja">
+                <label for="">Cantidad</label>
+                <input type="text" formControlName="cantidad">
+            </div>
+            <button type="submit">
+                Agregar
+            </button>
+        </form>
+        <div class="tabla">
+            <div class="encabezado">
+                <p>Tipo de Carne</p>
+                <p>Proveedor</p>
+                <p>Precio</p>
+                <p>Cantidad en libras</p>
+            </div>
+            <div class="datos" *ngFor="let tarjeta of listTarjeta">
+                <div>{{tarjeta.tipo}}</div>
+                <div>{{tarjeta.Proveedor}}</div>
+                <div>{{tarjeta.precio}}</div>
+                <div>{{tarjeta.cantidad}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="agregar">
+        <h3>Agregar Verduras</h3>
+        <form action="" [formGroup]="form" (ngSubmit)="crearVerduras()">
+
+            <div class="caja">
+                <label for="">Tipo</label>
+                <input type="text" formControlName="tipo">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Proveedor</label>
+                <input type="text" formControlName="proveedor">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Precio </label>
+                <input type="text" formControlName="precio">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Cantidad</label>
+                <input type="text" formControlName="cantidad">
+            </div>
+            
+            <button type="submit">
+                Agregar
+            </button>
+    
+
+        </form>
+
+        <div class="tabla">
+            <div class="encabezado">
+                <p>Tipo de Carne</p>
+                <p>Proveedor</p>
+                <p>Precio</p>
+                <p>Cantidad en libras</p>
+            </div>
+
+            <div class="datos" *ngFor="let tarjeta of listVerdura">
+                <div>{{tarjeta.tipo}}</div>
+                <div>{{tarjeta.Proveedor}}</div>
+                <div>{{tarjeta.precio}}</div>
+                <div>{{tarjeta.cantidad}}</div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="agregar">
+        <h3>Agregar Quesos</h3>
+        <form action="" [formGroup]="form" (ngSubmit)="crearQuesos()">
+
+            <div class="caja">
+                <label for="">Tipo</label>
+                <input type="text" formControlName="tipo">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Proveedor</label>
+                <input type="text" formControlName="proveedor">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Precio </label>
+                <input type="text" formControlName="precio">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Cantidad</label>
+                <input type="text" formControlName="cantidad">
+            </div>
+            
+            <button type="submit">
+                Agregar
+            </button>
+    
+
+        </form>
+
+        <div class="tabla">
+            <div class="encabezado">
+                <p>Tipo de Carne</p>
+                <p>Proveedor</p>
+                <p>Precio</p>
+                <p>Cantidad en libras</p>
+            </div>
+
+            <div class="datos" *ngFor="let tarjeta of listQueso">
+                <div>{{tarjeta.tipo}}</div>
+                <div>{{tarjeta.Proveedor}}</div>
+                <div>{{tarjeta.precio}}</div>
+                <div>{{tarjeta.cantidad}}</div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="agregar">
+        <h3>Agregar Hongos</h3>
+        <form action="" [formGroup]="form" (ngSubmit)="crearHongos()">
+
+            <div class="caja">
+                <label for="">Tipo</label>
+                <input type="text" formControlName="tipo">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Proveedor</label>
+                <input type="text" formControlName="proveedor">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Precio </label>
+                <input type="text" formControlName="precio">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Cantidad</label>
+                <input type="text" formControlName="cantidad">
+            </div>
+            
+            <button type="submit">
+                Agregar
+            </button>
+    
+
+        </form>
+        
+        <div class="tabla">
+            <div class="encabezado">
+                <p>Tipo de Carne</p>
+                <p>Proveedor</p>
+                <p>Precio</p>
+                <p>Cantidad en libras</p>
+            </div>
+
+            <div class="datos" *ngFor="let tarjeta of listHongos">
+                <div>{{tarjeta.tipo}}</div>
+                <div>{{tarjeta.Proveedor}}</div>
+                <div>{{tarjeta.precio}}</div>
+                <div>{{tarjeta.cantidad}}</div>
+                
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    
+    <div class="agregar">
+        <h3>Agregar Cafe</h3>
+        <form action="" [formGroup]="form" (ngSubmit)="crearCafe()">
+
+            <div class="caja">
+                <label for="">Tipo</label>
+                <input type="text" formControlName="tipo">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Proveedor</label>
+                <input type="text" formControlName="proveedor">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Precio </label>
+                <input type="text" formControlName="precio">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Cantidad</label>
+                <input type="text" formControlName="cantidad">
+            </div>
+            
+            <button type="submit">
+                Agregar
+            </button>
+    
+
+        </form>
+
+        <div class="tabla">
+            <div class="encabezado">
+                <p>Tipo de Carne</p>
+                <p>Proveedor</p>
+                <p>Precio</p>
+                <p>Cantidad en libras</p>
+            </div>
+
+            <div class="datos" *ngFor="let tarjeta of listCafe">
+                <div>{{tarjeta.tipo}}</div>
+                <div>{{tarjeta.Proveedor}}</div>
+                <div>{{tarjeta.precio}}</div>
+                <div>{{tarjeta.cantidad}}</div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="agregar">
+        <h3>Agregar Enlatados</h3>
+        <form action="" [formGroup]="form" (ngSubmit)="crearEnlatado()">
+
+            <div class="caja">
+                <label for="">Tipo</label>
+                <input type="text" formControlName="tipo">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Proveedor</label>
+                <input type="text" formControlName="proveedor">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Precio </label>
+                <input type="text" formControlName="precio">
+            </div>
+
+            
+            <div class="caja">
+                <label for="">Cantidad</label>
+                <input type="text" formControlName="cantidad">
+            </div>
+            
+            <button type="submit">
+                Agregar
+            </button>
+    
+
+        </form>
+
+        <div class="tabla">
+            <div class="encabezado">
+                <p>Tipo de Carne</p>
+                <p>Proveedor</p>
+                <p>Precio</p>
+                <p>Cantidad en libras</p>
+            </div>
+
+            <div class="datos" *ngFor="let tarjeta of listEnlatado">
+                <div>{{tarjeta.tipo}}</div>
+                <div>{{tarjeta.Proveedor}}</div>
+                <div>{{tarjeta.precio}}</div>
+                <div>{{tarjeta.cantidad}}</div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+</main>

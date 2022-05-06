@@ -1,0 +1,30 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+<header *ngIf="userLogget|async as user">
+  <nav>
+    <ul>
+      <div class="menus">
+
+        <li class="menuLi"> <a href="/home">| Home |</a></li>
+        
+        <li class="menuLi"> <a href="/invetario">| Inventario |</a></li>
+
+        <li class="menuLi"> <a href="/agregar">| Agrear Articulos |</a></li>
+
+        <li class="menuLi" > {{'Hola '+user.displayName}}</li>
+
+      </div>
+      <li class="inicioSesion">
+      
+        <a  class="logUot" href="/login">LogOut</a>
+      
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<router-outlet></router-outlet>
